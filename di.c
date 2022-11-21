@@ -47,6 +47,6 @@ void di(int a, char *out, int *j)
 	else
 	{
 		printf("realloc(): function failed\n");
-		exit (1);
+		exit(1);
 	}
 }
