@@ -1,18 +1,24 @@
 #include "main.h"
 
 /**
- * ui - (unsigned integer) function that adds unsigned decimal or integer
- * numbers to character array pointed to by @out.
+ * doi - (decimal or integer) function that adds decimal or integer numbers to
+ * character array pointed to by @out.
  * @a: number to be added to character array.
  * @out: pointer to character array to be written to stdout.
  * @j: pointer to index of @out.
- * @k: pointer to index of string to be written to stdout
+ * @k: pointer to index of string to be written to stdout.
  * Return: nothing.
  */
-void ui(unsigned int a, char *out, int *k, int *j)
+void doi(int a, char *out, int *k, int *j)
 {
-	unsigned int tmp;
-	int i;
+	int i, tmp;
+
+	if (a < 0)
+	{
+		a *= -1;
+		out[*j] = '-';
+		*j += 1;
+	}
 
 	tmp = a;
 	i = 0;
