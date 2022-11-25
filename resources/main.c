@@ -24,6 +24,7 @@ int main(void)
 	printf("Negative: [%d]\n", -76353);
 	_printf("Unsigned: [%u]\n", ui);
 	printf("Unsigned: [%u]\n", ui);
+	_printf("Unsigned binary: [%b]\n", ui);
 	_printf("Unsigned octal: [%o]\n", ui);
 	printf("Unsigned octal: [%o]\n", ui);
 	_printf("Unsigned hexadecimal: [%x, %X]\n", ui, ui);
@@ -32,13 +33,14 @@ int main(void)
 	printf("Character: [%c]\n", 'H');
 	_printf("String: [%s]\n", "I am a string!");
 	printf("String: [%s]\n", "I am a string!");
+	_printf("Reverse string: [%r]\n", "I am a string!", "fool");
 	_printf("Address: [%p]\n", addr);
 	printf("Address: [%p]\n", addr);
 	len = _printf("Percent: [%%]\n");
 	len2 = printf("Percent: [%%]\n");
 	_printf("Len: [%d]\n", len);
-	printf("Len: [%d]", len2);
-	_printf("Unknown: [%r]\n");
+	printf("Len: [%d]\n", len2);
+	_printf("Unknown: [%t]\n");
 	printf("Unknown: [%r]\n");
 	return (0);
 }

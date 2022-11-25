@@ -5,8 +5,8 @@
  * character array pointed to by @out.
  * @a: number to be added to character array.
  * @out: pointer to character array to be written to stdout.
- * @j: pointer to index of @out.
- * @k: pointer to index of string to be written to stdout.
+ * @k: pointer to current index of string to be written to stdout.
+ * @j: pointer to current index of @out.
  * Return: nothing.
  */
 void doi(int a, char *out, int *k, int *j)
@@ -28,7 +28,6 @@ void doi(int a, char *out, int *k, int *j)
 		tmp /= 10;
 		i++;
 	}
-
 	*j = tmp = *j + i;
 	*k += 1;
 

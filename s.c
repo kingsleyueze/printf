@@ -5,7 +5,8 @@
  * @out.
  * @a: character pointer to string.
  * @out: pointer to character array to be written to stdout.
- * @j: pointer to index of out.
+ * @k: pointer to current index of string to be written to stdout.
+ * @j: pointer to current index of @out.
  * Return: nothing.
  */
 void s(char *a, char *out, int *k, int *j)
@@ -34,4 +35,3 @@ void s(char *a, char *out, int *k, int *j)
 	*j = --index;
 	*k += 1;
 }
-
